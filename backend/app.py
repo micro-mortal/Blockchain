@@ -13,7 +13,7 @@ blockchain = Blockchain()
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Welcome to the CryptoVault Blockchain API!"})
+    return jsonify({"message": "Welcome to the CryptoVault Blockchain!"})
 
 @app.route('/generate-key', methods=['POST'])
 def generate_key_route():

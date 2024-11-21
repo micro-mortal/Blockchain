@@ -13,8 +13,8 @@ class Blockchain:
             with open('blockchain.json', 'r') as file:
                 self.chain = json.load(file)
         else:
-            self.create_genesis_block()  # If file does not exist, create the genesis block
-
+            self.create_genesis_block()
+            
     def save_chain(self):
         with open('blockchain.json', 'w') as file:
             json.dump(self.chain, file, indent=4)
